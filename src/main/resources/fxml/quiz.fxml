@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.quizapp.controller.QuizController" spacing="10" alignment="CENTER">
+    <Text fx:id="quizTitle" text="Quiz Title" style="-fx-font-size: 24px;" />
+    <Text fx:id="questionText" text="What is the capital of France?" style="-fx-font-size: 18px;" />
+
+
+    <RadioButton fx:id="option1" text="Paris">
+        <toggleGroup>
+            <ToggleGroup fx:id="optionsGroup" />
+        </toggleGroup>
+    </RadioButton>
+    <RadioButton fx:id="option2" text="Berlin" toggleGroup="$optionsGroup" />
+    <RadioButton fx:id="option3" text="Madrid" toggleGroup="$optionsGroup" />
+    <RadioButton fx:id="option4" text="Rome" toggleGroup="$optionsGroup" />
+
+    <Button text="Submit Answer" fx:id="submitButton" onAction="#handleSubmit" />
+</VBox>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.com.quizapp.controller.LoginController" spacing="20" alignment="CENTER" style="-fx-padding: 20;">
+    <Text text="Login to Quiz App" style="-fx-font-size: 24px;"/>
+    <TextField fx:id="usernameField" promptText="Username" style="-fx-pref-width: 200px;"/>
+    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-pref-width: 200px;"/>
+    <Button text="Login" fx:id="loginButton" onAction="#handleLogin" style="-fx-pref-width: 100px;"/>
+    <Text fx:id="errorMessage" style="-fx-text-fill: red;"/>
+</VBox>
